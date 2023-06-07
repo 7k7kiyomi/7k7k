@@ -171,16 +171,7 @@ void MainWindow::on_mouseDoubleClicked(QPoint point)
         qDebug()<<color;//输出选中颜色
         break;
     }
-//    case QGraphicsTextItem::Type: //文字，设置字体
-//    {
-//        QGraphicsTextItem *theItem = qgraphicsitem_cast<QGraphicsTextItem*>(item);
-//        QFont font = theItem->font();
-//        bool ok = false;
-//        font = QFontDialog::getFont(&ok,font,this,"设置字体");
-//        if (ok)
-//            theItem->setFont(font);
-//        break;
-//    }
+
     }
 }
 
@@ -349,32 +340,6 @@ void MainWindow::on_actItem_Line_triggered()
     scene->clearSelection();
     item->setSelected(true);
 }
-
-//绘制文字
-//void MainWindow::on_actItem_Text_triggered()
-//{
-//    QString str = QInputDialog::getText(this,"输入文字","请输入文字");
-//    if (str.isEmpty())
-//        return;
-
-//    QGraphicsTextItem *item = new QGraphicsTextItem(str);
-
-//    QFont font=this->font();
-//    font.setPointSize(20);
-//    font.setBold(true);
-//    item->setFont(font);
-
-//    item->setFlags(QGraphicsItem::ItemIsMovable | QGraphicsItem::ItemIsSelectable | QGraphicsItem::ItemIsFocusable);
-//    item->setPos(-50+(qrand() % 100),-50+(qrand() % 100));
-//    item->setZValue(++frontZ);
-
-//    item->setData(ItemId,++seqNum);
-//    item->setData(ItemDes,"文字");
-
-//    scene->addItem(item);
-//    scene->clearSelection();
-//    item->setSelected(true);
-//}
 
 //放大
 void MainWindow::on_actZoomIn_triggered()
