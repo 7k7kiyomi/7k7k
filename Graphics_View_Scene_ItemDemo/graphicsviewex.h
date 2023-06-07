@@ -1,6 +1,5 @@
 ﻿#ifndef GRAPHICSVIEWEX_H
 #define GRAPHICSVIEWEX_H
-#include "geos_c.h"
 #include <QWidget>
 #include <QGraphicsView>
 
